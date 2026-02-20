@@ -159,53 +159,6 @@
     flex-wrap: wrap;
   }
 
-  .bio-list {
-    margin: 14px 0 0 0;
-    padding-left: 18px;
-  }
-
-  .bio-list li {
-    margin: 4px 0;
-  }
-
-  .bio-header {
-    margin: 0;
-  }
-
-  .bio-links {
-    margin: 2px 0 0 0;
-  }
-
-  .bio-supervision {
-    margin: 2px 0 0 0;
-  }
-
-  .bio-research {
-    margin: 12px 0 0 0;
-  }
-
-  .bio-row {
-    display: grid;
-    grid-template-columns: 70px 80px 110px 1fr;
-    column-gap: 12px;
-    align-items: baseline;
-    justify-items: start;
-  }
-
-  .bio-row .bio-major {
-    white-space: nowrap;
-  }
-
-  @media (max-width: 640px) {
-    .bio-row {
-      grid-template-columns: 1fr;
-      row-gap: 2px;
-    }
-
-    .bio-row .bio-major {
-      white-space: normal;
-    }
-  }
 
   .pub-legend-item {
     display: inline-flex;
