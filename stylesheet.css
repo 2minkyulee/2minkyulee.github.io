@@ -168,38 +168,24 @@
     margin: 4px 0;
   }
 
-  .bio-list li .bio-degree,
-  .bio-list li .bio-school,
-  .bio-list li .bio-dates,
-  .bio-list li .bio-major {
-    display: inline-block;
-    vertical-align: top;
+  .bio-row {
+    display: grid;
+    grid-template-columns: 70px 80px 110px 1fr;
+    column-gap: 12px;
+    align-items: baseline;
   }
 
-  .bio-list li .bio-degree {
-    width: 64px;
-  }
-
-  .bio-list li .bio-school {
-    width: 64px;
-  }
-
-  .bio-list li .bio-dates {
-    width: 92px;
-  }
-
-  .bio-list li .bio-major {
-    width: 380px;
+  .bio-row .bio-major {
     white-space: nowrap;
   }
 
   @media (max-width: 640px) {
-    .bio-list li .bio-degree,
-    .bio-list li .bio-school,
-    .bio-list li .bio-dates,
-    .bio-list li .bio-major {
-      display: block;
-      width: auto;
+    .bio-row {
+      grid-template-columns: 1fr;
+      row-gap: 2px;
+    }
+
+    .bio-row .bio-major {
       white-space: normal;
     }
   }
