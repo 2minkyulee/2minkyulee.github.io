@@ -181,15 +181,15 @@
   }
 
   .bio-list li .bio-school {
-    width: 210px;
-  }
-
-  .bio-list li .bio-dates {
     width: 110px;
   }
 
+  .bio-list li .bio-dates {
+    width: 100px;
+  }
+
   .bio-list li .bio-major {
-    width: 240px;
+    width: 320px;
     white-space: nowrap;
   }
 
