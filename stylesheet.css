@@ -138,13 +138,13 @@
     display: flex;
     gap: 16px;
     align-items: stretch;
-    background: #f5f5f5;
+    background: #fafafa;
     padding: 14px;
     border-radius: 8px;
   }
 
   .pub-card-first {
-    background: #fff6cc;
+    background: #fffbe6;
   }
 
   .pub-media {
