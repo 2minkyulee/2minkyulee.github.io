@@ -190,6 +190,7 @@
 
   .bio-list li .bio-major {
     width: 240px;
+    white-space: nowrap;
   }
 
   @media (max-width: 640px) {
@@ -199,6 +200,7 @@
     .bio-list li .bio-major {
       display: block;
       width: auto;
+      white-space: normal;
     }
   }
 
