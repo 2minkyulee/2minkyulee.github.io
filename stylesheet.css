@@ -146,7 +146,7 @@
 
   .pub-card-first {
     background: #ffffff;
-    box-shadow: 0 6px 18px rgba(246, 213, 109, 0.55);
+    box-shadow: 0 0 0 2px rgba(246, 213, 109, 0.9), 0 0 16px rgba(246, 213, 109, 0.45);
   }
 
   .pub-legend {
@@ -157,6 +157,15 @@
     gap: 12px;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .bio-list {
+    margin: 10px 0 0 0;
+    padding-left: 18px;
+  }
+
+  .bio-list li {
+    margin: 4px 0;
   }
 
   .pub-legend-item {
@@ -183,13 +192,21 @@
 
   .pub-media {
     flex: 0 0 180px;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   .pub-media img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     border-radius: 6px;
+    object-fit: contain;
     background: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   }
