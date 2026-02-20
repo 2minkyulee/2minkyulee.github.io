@@ -160,7 +160,7 @@
   }
 
   .bio-list {
-    margin: 10px 0 0 0;
+    margin: 14px 0 0 0;
     padding-left: 18px;
   }
 
@@ -168,8 +168,20 @@
     margin: 4px 0;
   }
 
+  .bio-header {
+    margin: 0;
+  }
+
+  .bio-links {
+    margin: 2px 0 0 0;
+  }
+
+  .bio-supervision {
+    margin: 2px 0 0 0;
+  }
+
   .bio-research {
-    margin: 8px 0 0 0;
+    margin: 12px 0 0 0;
   }
 
   .bio-row {
@@ -177,6 +189,7 @@
     grid-template-columns: 70px 80px 110px 1fr;
     column-gap: 12px;
     align-items: baseline;
+    justify-items: start;
   }
 
   .bio-row .bio-major {
