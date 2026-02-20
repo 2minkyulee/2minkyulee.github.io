@@ -177,19 +177,19 @@
   }
 
   .bio-list li .bio-degree {
-    width: 70px;
+    width: 64px;
   }
 
   .bio-list li .bio-school {
-    width: 110px;
+    width: 64px;
   }
 
   .bio-list li .bio-dates {
-    width: 100px;
+    width: 92px;
   }
 
   .bio-list li .bio-major {
-    width: 320px;
+    width: 380px;
     white-space: nowrap;
   }
 
