@@ -168,6 +168,40 @@
     margin: 4px 0;
   }
 
+  .bio-list li .bio-degree,
+  .bio-list li .bio-school,
+  .bio-list li .bio-dates,
+  .bio-list li .bio-major {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .bio-list li .bio-degree {
+    width: 70px;
+  }
+
+  .bio-list li .bio-school {
+    width: 210px;
+  }
+
+  .bio-list li .bio-dates {
+    width: 110px;
+  }
+
+  .bio-list li .bio-major {
+    width: 240px;
+  }
+
+  @media (max-width: 640px) {
+    .bio-list li .bio-degree,
+    .bio-list li .bio-school,
+    .bio-list li .bio-dates,
+    .bio-list li .bio-major {
+      display: block;
+      width: auto;
+    }
+  }
+
   .pub-legend-item {
     display: inline-flex;
     align-items: center;
