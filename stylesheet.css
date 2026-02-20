@@ -138,13 +138,15 @@
     display: flex;
     gap: 16px;
     align-items: stretch;
-    background: #fafafa;
+    background: #ffffff;
     padding: 14px;
     border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
   }
 
   .pub-card-first {
-    background: #fffbe6;
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(246, 213, 109, 0.55);
   }
 
   .pub-legend {
@@ -164,18 +166,19 @@
   }
 
   .pub-legend-swatch {
-    width: 14px;
-    height: 10px;
+    width: 16px;
+    height: 12px;
     border-radius: 3px;
     display: inline-block;
+    background: #ffffff;
   }
 
   .pub-legend-first {
-    background: #fffbe6;
+    box-shadow: 0 3px 10px rgba(246, 213, 109, 0.55);
   }
 
   .pub-legend-co {
-    background: #fafafa;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
   }
 
   .pub-media {
