@@ -217,7 +217,7 @@
   }
 
   .pub-legend-first {
-    box-shadow: 0 3px 10px rgba(246, 213, 109, 0.55);
+    box-shadow: 0 0 0 2px rgba(246, 213, 109, 0.9), 0 0 10px rgba(246, 213, 109, 0.4);
   }
 
   .pub-legend-co {
