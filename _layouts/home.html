@@ -49,218 +49,221 @@
 
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
-              </td>
-            </tr>
+                <!-- Reordered: first list top-3 first-author papers (most recent first), then remaining papers by year desc -->
 
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div class="pub-card pub-card-first">
-                  <div class="pub-media">
-                    <img src="https://jiwoogit.github.io/assets/img/CVPR2026_seacache_thumbnail.gif" alt="CVPR 2026 SeaCache thumbnail">
-                  </div>
-                  <div class="pub-body">
-                    <span class="papertitle">SeaCache: Spectral-Evolution-Aware Cache for Accelerating Diffusion Models</span><span style="color:red;"> (Oral)</span>
-                    <br>
-                    Jiwoo Chung, Sangeek Hyun, <span class="author-highlight">MinKyu Lee</span>, Byeongju Han, Geonho Cha, Dongyoon Wee, Youngjun Hong, Jae-Pil Heo&dagger;
-                    <br>
-                      CVPR, 2026
-                      <br>
-                      Paper (PDF) / arXiv / Code
-                      <p class="paper-summary">
-                        A training-free, plug-and-play caching schedule that applies a timestep-dependent Spectral-Evolution-Aware (SEA) filter before measuring feature distances, so reuse decisions track content (signal) rather than high-frequency noise, improving latency–quality trade-offs.
-                      </p>
-                  </div>
-                </div>
-              </td>
-            </tr>
-
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <div class="pub-card">
-                    <div class="pub-media">
-                      <img src="static/images/CVPR2026_PDF.png" alt="CVPR Findings 2026 PDF-GS thumbnail">
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <div class="pub-card pub-card-first">
+                      <div class="pub-media">
+                        <img src="static/images/ICLR2026_Analyzing.png" alt="ICLR 2026 Analyzing thumbnail">
+                      </div>
+                      <div class="pub-body">
+                        <a href="https://openreview.net/forum?id=SbLj5hJXh6">
+                          <span class="papertitle">Analyzing the Training Dynamics of Image Restoration Transformers: A Revisit to Layer Normalization</span>
+                        </a>
+                        <br>
+                        <span class="author-highlight">MinKyu Lee</span>, Sangeek Hyun, Woojin Jun, Hyunjun Kim, Jiwoo Chung, Jae-Pil Heo&dagger;
+                        <br>
+                        <em>ICLR</em>, 2026
+                        <br>
+                        <a href="https://openreview.net/forum?id=SbLj5hJXh6">OpenReview</a>
+                        /
+                        <a href="https://arxiv.org/abs/2504.06629">arXiv</a>
+                        /
+                        <a href="https://github.com/2minkyulee/i-LN">Code</a>
+                        <p class="paper-summary">
+                          This paper analyzes training instability in image restoration Transformers caused by conventional per-token LayerNorm, and proposes an IR-tailored normalization (i-LN) that stabilizes training and improves performance across restoration tasks.
+                        </p>
+                      </div>
                     </div>
-                    <div class="pub-body">
-                      <span class="papertitle">Progressive Distractor Filtering for Robust 3D Gaussian Splatting</span>
-                      <br>
-                      Kangmin Seo, <span class="author-highlight">MinKyu Lee</span>, Tae-Young Kim, ByeongCheol Lee, JoonSeoung An, Jae-Pil Heo&dagger;
-                      <br>
-                      CVPR Findings, 2026
-                      <br>
-                      Paper (PDF) / arXiv / Code
-                      <p class="paper-summary">
-                        A two-phase 3DGS framework: progressive filtering iteratively finds and masks view-inconsistent distractors via rendered-vs-train discrepancies, then a reconstruction phase restores fine details from the purified representation. PDF-GS show robust, distractor-free reconstructions with no inference-time overhead.
-                      </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <div class="pub-card pub-card-first">
+                      <div class="pub-media">
+                        <img src="static/images/CVPR2025_Auto-Encoded.png" alt="CVPR 2025 Auto-Encoded thumbnail">
+                      </div>
+                      <div class="pub-body">
+                        <a href="https://arxiv.org/abs/2412.00124">
+                          <span class="papertitle">Auto-Encoded Supervision for Perceptual Image Super-Resolution</span>
+                        </a>
+                        <br>
+                        <span class="author-highlight">MinKyu Lee</span>, Sangeek Hyun, Woojin Jun, Jae-Pil Heo&dagger;
+                        <br>
+                        <em>CVPR</em>, 2025
+                        <br>
+                        <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Lee_Auto-Encoded_Supervision_for_Perceptual_Image_Super-Resolution_CVPR_2025_paper.html">Paper</a>
+                        /
+                        <a href="https://arxiv.org/abs/2412.00124">arXiv</a>
+                        /
+                        <a href="https://cvpr.thecvf.com/virtual/2025/poster/32435">Poster</a>
+                        /
+                        <a href="https://github.com/2minkyulee/AESOP-SR">Code</a>
+                        <p class="paper-summary">
+                          This paper proposes AESOP, a simple yet effective loss that replaces pixel-wise Lp loss with a distance in the autoencoder output space, enabling better reconstruction in perceptual super-resolution without sacrificing visual quality.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-              </tr>
+                  </td>
+                </tr>
 
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <div class="pub-card pub-card-first">
+                      <div class="pub-media">
+                        <img src="static/images/AAAI2024_Noise-free.png" alt="AAAI 2024 Noise-free thumbnail">
+                      </div>
+                      <div class="pub-body">
+                        <a href="https://arxiv.org/abs/2312.17526">
+                          <span class="papertitle">Noise-free Optimization in Early Training Steps for Image Super-Resolution</span>
+                        </a>
+                        <br>
+                        <span class="author-highlight">MinKyu Lee</span>, Jae-Pil Heo&dagger;
+                        <br>
+                        <em>AAAI</em>, 2024
+                        <br>
+                        <a href="https://doi.org/10.1609/aaai.v38i4.28073">Paper</a>
+                        /
+                        <a href="https://arxiv.org/abs/2312.17526">arXiv</a>
+                        /
+                        <a href="https://github.com/2minkyulee/ECO">Code</a>
+                        <p class="paper-summary">
+                          This paper shows that early-stage SISR training with pixel-wise losses is overly affected by "inherent noise" in HR targets, and proposes a noise-free optimization scheme that estimates the optimal HR centroid and optimizes toward it, improving training stability and final super-resolution quality.
+                        </p>
+                      </div>
+                    </div> 
+                  </td>
+                </tr>
 
+                <!-- Remaining (non-first-author) papers, sorted by year (desc) -->
 
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div class="pub-card pub-card-first">
-                  <div class="pub-media">
-                    <img src="static/images/ICLR2026_Analyzing.png" alt="ICLR 2026 Analyzing thumbnail">
-                  </div>
-                  <div class="pub-body">
-                    <a href="https://openreview.net/forum?id=SbLj5hJXh6">
-                      <span class="papertitle">Analyzing the Training Dynamics of Image Restoration Transformers: A Revisit to Layer Normalization</span>
-                    </a>
-                    <br>
-                    <span class="author-highlight">MinKyu Lee</span>, Sangeek Hyun, Woojin Jun, Hyunjun Kim, Jiwoo Chung, Jae-Pil Heo&dagger;
-                    <br>
-                    <em>ICLR</em>, 2026
-                    <br>
-                    <a href="https://openreview.net/forum?id=SbLj5hJXh6">OpenReview</a>
-                    /
-                    <a href="https://arxiv.org/abs/2504.06629">arXiv</a>
-                    /
-                    <a href="https://github.com/2minkyulee/i-LN">Code</a>
-                    <p class="paper-summary">
-                      This paper analyzes training instability in image restoration Transformers caused by conventional per-token LayerNorm, and proposes an IR-tailored normalization (i-LN) that stabilizes training and improves performance across restoration tasks.
-                    </p>
-                  </div>
-                </div>
-              </td>
-            </tr>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <div class="pub-card pub-card-first">
+                      <div class="pub-media">
+                        <img src="https://jiwoogit.github.io/assets/img/CVPR2026_seacache_thumbnail.gif" alt="CVPR 2026 SeaCache thumbnail">
+                      </div>
+                      <div class="pub-body">
+                        <span class="papertitle">SeaCache: Spectral-Evolution-Aware Cache for Accelerating Diffusion Models</span>
+                        <br>
+                        Jiwoo Chung, Sangeek Hyun, <span class="author-highlight">MinKyu Lee</span>, Byeongju Han, Geonho Cha, Dongyoon Wee, Youngjun Hong, Jae-Pil Heo&dagger;
+                        <br>
+                          CVPR, 2026 <span style="color:red;font-weight:bold;">(Oral)</span>
+                          <br>
+                          Paper (PDF) / arXiv / Code
+                          <p class="paper-summary">
+                            A training-free, plug-and-play caching schedule that applies a timestep-dependent Spectral-Evolution-Aware (SEA) filter before measuring feature distances, so reuse decisions track content (signal) rather than high-frequency noise, improving latency–quality trade-offs.
+                          </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
 
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div class="pub-card">
-                  <div class="pub-media">
-                    <img src="static/images/NeurIPS2025_Diffusion.png" alt="NeurIPS 2025 Diffusion thumbnail">
-                  </div>
-                  <div class="pub-body">
-                    <a href="https://openreview.net/forum?id=Kf9eNbp4wy">
-                      <span class="papertitle">Diffusion Feature Field for Text-based 3D Editing with Gaussian Splatting</span>
-                    </a>
-                    <br>
-                    Eunseo Koh, Sangeek Hyun, <span class="author-highlight">MinKyu Lee</span>, Jiwoo Chung, Kangmin Seo, Jae-Pil Heo&dagger;
-                    <br>
-                    <em>NeurIPS</em>, 2025
-                    <br>
-                    <a href="https://openreview.net/forum?id=Kf9eNbp4wy">OpenReview</a>
-                    <p class="paper-summary">
-                      This paper proposes DFFSplat, which injects a 3D-consistent diffusion feature field into the 3D Gaussian Splatting editing pipeline to enforce multi-view consistency and mitigate view-inconsistent artifacts like the Janus problem in text-based 3D editing.
-                    </p>
-                  </div>
-                </div>
-              </td>
-            </tr>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <div class="pub-card">
+                      <div class="pub-media">
+                        <img src="static/images/CVPR2026_PDF.png" alt="CVPR Findings 2026 PDF-GS thumbnail">
+                      </div>
+                      <div class="pub-body">
+                        <span class="papertitle">Progressive Distractor Filtering for Robust 3D Gaussian Splatting</span>
+                        <br>
+                        Kangmin Seo, <span class="author-highlight">MinKyu Lee</span>, Tae-Young Kim, ByeongCheol Lee, JoonSeoung An, Jae-Pil Heo&dagger;
+                        <br>
+                        CVPR Findings, 2026
+                        <br>
+                        Paper (PDF) / arXiv / Code
+                        <p class="paper-summary">
+                          A two-phase 3DGS framework: progressive filtering iteratively finds and masks view-inconsistent distractors via rendered-vs-train discrepancies, then a reconstruction phase restores fine details from the purified representation. PDF-GS show robust, distractor-free reconstructions with no inference-time overhead.
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
 
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div class="pub-card">
-                  <div class="pub-media">
-                    <img src="static/images/ICCV2025_Fine-Tuning.png" alt="ICCV 2025 Fine-Tuning thumbnail">
-                  </div>
-                  <div class="pub-body">
-                    <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chung_Fine-Tuning_Visual_Autogressive_Models_for_Subject-Driven_Generation_ICCV_2025_paper.html">
-                      <span class="papertitle">Fine-Tuning Visual Autoregressive Models for Subject-Driven Generation</span>
-                    </a>
-                    <br>
-                    Jiwoo Chung, Sangeek Hyun, Hyunjun Kim, Eunseo Koh, <span class="author-highlight">MinKyu Lee</span>, Jae-Pil Heo&dagger;
-                    <br>
-                    <em>ICCV</em>, 2025
-                    <br>
-                    <em>Qualcomm Innovation Fellowship Korea 2025 Finalist</em>
-                    <br>
-                    <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chung_Fine-Tuning_Visual_Autogressive_Models_for_Subject-Driven_Generation_ICCV_2025_paper.html">Paper</a>
-                    /
-                    <a href="https://arxiv.org/abs/2504.02612">arXiv</a>
-                    /
-                    <a href="https://github.com/jiwoogit/ARBooth">Code</a>
-                    /
-                    <a href="https://jiwoogit.github.io/ARBooth">Project</a>
-                    <p class="paper-summary">
-                      This paper introduces a fast and effective VAR-based method for subject-driven image generation, using selective and scale-wise weighted tuning to overcome fine-tuning challenges and outperform diffusion models.
-                    </p>
-                  </div>
-                </div>
-              </td>
-            </tr>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <div class="pub-card pub-card-first">
+                      <div class="pub-media">
+                        <img src="https://hse1032.github.io/static/images/GAT.png" alt="ICML 2026 Scalable GANs thumbnail">
+                      </div>
+                      <div class="pub-body">
+                        <a href="https://hse1032.github.io/GAT">
+                          <span class="papertitle">Scalable GANs with Transformers</span>
+                        </a>
+                        <br>
+                        Sangeek Hyun, <span class="author-highlight">MinKyu Lee</span>, Jae-Pil Heo&dagger;
+                        <br>
+                        <em>ICML</em>, 2026
+                        <br>
+                        <a href="https://hse1032.github.io/GAT">Project Page</a>
+                        /
+                        <a href="https://arxiv.org/abs/2509.24935">arXiv</a>
+                        <p class="paper-summary">
+                          Pure Transformer GANs can be scaled up and beat diffusion/flow models on an one-step conditional generation on ImageNet-256 only within 40 epochs.
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
 
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div class="pub-card pub-card-first">
-                  <div class="pub-media">
-                    <img src="static/images/CVPR2025_Auto-Encoded.png" alt="CVPR 2025 Auto-Encoded thumbnail">
-                  </div>
-                  <div class="pub-body">
-                    <a href="https://arxiv.org/abs/2412.00124">
-                      <span class="papertitle">Auto-Encoded Supervision for Perceptual Image Super-Resolution</span>
-                    </a>
-                    <br>
-                    <span class="author-highlight">MinKyu Lee</span>, Sangeek Hyun, Woojin Jun, Jae-Pil Heo&dagger;
-                    <br>
-                    <em>CVPR</em>, 2025
-                    <br>
-                    <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Lee_Auto-Encoded_Supervision_for_Perceptual_Image_Super-Resolution_CVPR_2025_paper.html">Paper</a>
-                    /
-                    <a href="https://arxiv.org/abs/2412.00124">arXiv</a>
-                    /
-                    <a href="https://cvpr.thecvf.com/virtual/2025/poster/32435">Poster</a>
-                    /
-                    <a href="https://github.com/2minkyulee/AESOP-SR">Code</a>
-                    <p class="paper-summary">
-                      This paper proposes AESOP, a simple yet effective loss that replaces pixel-wise Lp loss with a distance in the autoencoder output space, enabling better reconstruction in perceptual super-resolution without sacrificing visual quality.
-                    </p>
-                  </div>
-                </div>
-              </td>
-            </tr>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <div class="pub-card">
+                      <div class="pub-media">
+                        <img src="static/images/NeurIPS2025_Diffusion.png" alt="NeurIPS 2025 Diffusion thumbnail">
+                      </div>
+                      <div class="pub-body">
+                        <a href="https://openreview.net/forum?id=Kf9eNbp4wy">
+                          <span class="papertitle">Diffusion Feature Field for Text-based 3D Editing with Gaussian Splatting</span>
+                        </a>
+                        <br>
+                        Eunseo Koh, Sangeek Hyun, <span class="author-highlight">MinKyu Lee</span>, Jiwoo Chung, Kangmin Seo, Jae-Pil Heo&dagger;
+                        <br>
+                        <em>NeurIPS</em>, 2025
+                        <br>
+                        <a href="https://openreview.net/forum?id=Kf9eNbp4wy">OpenReview</a>
+                        <p class="paper-summary">
+                          This paper proposes DFFSplat, which injects a 3D-consistent diffusion feature field into the 3D Gaussian Splatting editing pipeline to enforce multi-view consistency and mitigate view-inconsistent artifacts like the Janus problem in text-based 3D editing.
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
 
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div class="pub-card pub-card-first">
-                  <div class="pub-media">
-                    <img src="static/images/AAAI2024_Noise-free.png" alt="AAAI 2024 Noise-free thumbnail">
-                  </div>
-                  <div class="pub-body">
-                    <a href="https://arxiv.org/abs/2312.17526">
-                      <span class="papertitle">Noise-free Optimization in Early Training Steps for Image Super-Resolution</span>
-                    </a>
-                    <br>
-                    <span class="author-highlight">MinKyu Lee</span>, Jae-Pil Heo&dagger;
-                    <br>
-                    <em>AAAI</em>, 2024
-                    <br>
-                    <a href="https://doi.org/10.1609/aaai.v38i4.28073">Paper</a>
-                    /
-                    <a href="https://arxiv.org/abs/2312.17526">arXiv</a>
-                    /
-                    <a href="https://github.com/2minkyulee/ECO">Code</a>
-                    <p class="paper-summary">
-                      This paper shows that early-stage SISR training with pixel-wise losses is overly affected by "inherent noise" in HR targets, and proposes a noise-free optimization scheme that estimates the optimal HR centroid and optimizes toward it, improving training stability and final super-resolution quality.
-                    </p>
-                  </div>
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div class="pub-card pub-card-first">
-                  <div class="pub-media">
-                    <img src="https://hse1032.github.io/static/images/GAT.png" alt="ICML 2026 Scalable GANs thumbnail">
-                  </div>
-                  <div class="pub-body">
-                    <a href="https://hse1032.github.io/GAT">
-                      <span class="papertitle">Scalable GANs with Transformers</span>
-                    </a>
-                    <br>
-                    Sangeek Hyun, <span class="author-highlight">MinKyu Lee</span>, Jae-Pil Heo&dagger;
-                    <br>
-                    <em>ICML</em>, 2026
-                    <br>
-                    <a href="https://hse1032.github.io/GAT">Project Page</a>
-                    /
-                    <a href="https://arxiv.org/abs/2509.24935">arXiv</a>
-                    <p class="paper-summary">
-                      Pure Transformer GANs can be scaled up and beat diffusion/flow models on an one-step conditional generation on ImageNet-256 only within 40 epochs.
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <div class="pub-card">
+                      <div class="pub-media">
+                        <img src="static/images/ICCV2025_Fine-Tuning.png" alt="ICCV 2025 Fine-Tuning thumbnail">
+                      </div>
+                      <div class="pub-body">
+                        <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chung_Fine-Tuning_Visual_Autogressive_Models_for_Subject-Driven_Generation_ICCV_2025_paper.html">
+                          <span class="papertitle">Fine-Tuning Visual Autoregressive Models for Subject-Driven Generation</span>
+                        </a>
+                        <br>
+                        Jiwoo Chung, Sangeek Hyun, Hyunjun Kim, Eunseo Koh, <span class="author-highlight">MinKyu Lee</span>, Jae-Pil Heo&dagger;
+                        <br>
+                        <em>ICCV</em>, 2025
+                        <br>
+                        <em>Qualcomm Innovation Fellowship Korea 2025 Finalist</em>
+                        <br>
+                        <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chung_Fine-Tuning_Visual_Autogressive_Models_for_Subject-Driven_Generation_ICCV_2025_paper.html">Paper</a>
+                        /
+                        <a href="https://arxiv.org/abs/2504.02612">arXiv</a>
+                        /
+                        <a href="https://github.com/jiwoogit/ARBooth">Code</a>
+                        /
+                        <a href="https://jiwoogit.github.io/ARBooth">Project</a>
+                        <p class="paper-summary">
+                          This paper introduces a fast and effective VAR-based method for subject-driven image generation, using selective and scale-wise weighted tuning to overcome fine-tuning challenges and outperform diffusion models.
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
                     </p>
                   </div>
                 </div>
